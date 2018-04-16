@@ -9,6 +9,7 @@ define('WWW', __DIR__);
 define('CORE', dirname(__DIR__) . '/vendor/core');
 define('ROOT', dirname(__DIR__));
 define('APP', dirname(__DIR__) . '/app');
+define('LAYOUT', 'default');
 
 //require '../vendor/core/Router.php';
 require '../vendor/libs/functions.php';
@@ -38,7 +39,7 @@ Router::add('^(?P<controller>[a-z-]+)/?(?P<action>[a-z-]+)?$');
 
 //Router::add('<controller:[a-z-]+>/<action[a-z-]+>');
 
-debug(Router::getRoutes());
+//debug(Router::getRoutes());
 
 Router::dispatch($query);
 
