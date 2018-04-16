@@ -8,7 +8,7 @@
 
     <!-- Bootstrap -->
     <link href="/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-    <link href="/css/min.css" rel="stylesheet">
+    <link href="/css/main.css" rel="stylesheet">
     <!--[if lt IE 9]>
     <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
     <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
@@ -19,6 +19,9 @@
 <h1>Hello, world!</h1>
 
 <?=$content?>
+
+<?= debug(\vendor\core\Db::$countSql) ?>
+<?= debug(\vendor\core\Db::$queries) ?>
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 <script src="/bootstrap/js/bootstrap.min.js"></script>
